@@ -26,7 +26,7 @@
       <div id='loading'>loading...</div>
       <div class="panel-body">
           <div id="calendar"></div>
-          <?php include'calendar/demos/json.php'; ?>
+          <?php include'demos/json.php'; ?>
       </div>
 
     </div>
