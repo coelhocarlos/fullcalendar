@@ -1,18 +1,5 @@
 # fullcalendar
+
 Fullcalendar DB Mysqli
 
-FOR CMS OR OTHER FRAMMEWORK NEED U PUT YOUR JQUERY IN JSON.php 
 
-
-fullcalendar/json.php
-fullcalendar/json.php ---> push folder php
-
-
-////////////////////////////////////////////////
-JSON.PHP
-//PUT JQUERY HERE
-<script src="../jquery-3.1.0.min.js"></script>
-<script>
-//SCRIPT FULL CALENDAR
-$(document).ready(function() {
-  ///////////////////////////////////////////
