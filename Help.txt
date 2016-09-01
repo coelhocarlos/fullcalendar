@@ -1,0 +1,25 @@
+FOR CMS OR OTHER FRAMMEWORK NEED U PUT YOUR JQUERY IN JSON.php 
+
+
+fullcalendar/json.php
+fullcalendar/json.php ---> push folder php
+
+//PUT JQUERY HERE
+<script src="../jquery-3.1.0.min.js"></script>
+
+<script>
+
+	
+$(document).ready(function() {
+
+
+		$('#calendar').fullCalendar({
+	
+		header: {
+		
+		left: 'prev,next today',
+
+		center: 'title',
+				
+                right: 'month,agendaWeek,agendaDay'
+			},
