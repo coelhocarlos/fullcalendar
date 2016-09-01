@@ -1,8 +1,11 @@
 <?php
 include 'db_conn.php';
-// Aqui você se conecta ao banco
+// Create connection
 $mysqli = new mysqli('localhost', 'root', '', 'mydb');
-// Executa uma consulta que deleta uma notícia
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 $sql = "DELETE FROM `noticias` WHERE `id` = 2";
 $query = $mysqli->query($sql);
 echo 'Registros afetados: ' . $query->affected_rows;
