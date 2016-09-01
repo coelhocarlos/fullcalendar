@@ -1,7 +1,12 @@
 <?php
 include 'db_conn.php';
-// Aqui você se conecta ao banco
+
+// Create connection
 $mysqli = new mysqli('localhost', 'root', '', 'mydb');
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 // Executa uma consulta que pega cinco notícias
 $sql = "SELECT `id`, `titulo` FROM `noticias` LIMIT 5";
 $query = $mysqli->query($sql);
