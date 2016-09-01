@@ -1,7 +1,7 @@
 <?php
 include 'db_conn.php';
 // Create connection
-$mysqli = new mysqli('localhost', 'root', '', 'mydb');
+$conn = new mysqli('localhost', 'root', '', 'mydb');
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
