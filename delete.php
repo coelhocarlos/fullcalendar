@@ -6,7 +6,7 @@ $conn = new mysqli('localhost', 'root', '', 'mydb');
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$sql = "DELETE FROM `noticias` WHERE `id` = 2";
+$sql = "DELETE FROM `events` WHERE `id` = 1";
 $query = $mysqli->query($sql);
 echo 'Registros afetados: ' . $query->affected_rows;
 ?>
